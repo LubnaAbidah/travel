@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/metro-bootstrap.css" rel="stylesheet">
+    <link href="css/metro-bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/iconFont.css" rel="stylesheet">
+	<link href="css/docs.css" rel="stylesheet">
+
+    <!-- Load JavaScript Libraries -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/jquery/jquery.widget.min.js"></script>
+    <script src="js/jquery/jquery.mousewheel.js"></script>
+
+    <!-- Metro UI CSS JavaScript plugins -->
+    <script src="js/load-metro.js"></script>
+	<script src="js/docs.js"></script>
+    
+    <style>
+	</style>
+	
+<title>Selamat Datang di Halaman Author</title>
+
+</head>
+
+<body class="metro" style="background-color: #0F0">
+<!-- --------------------------------------------------Awal Header-------------------------------------------------- -->
+	<nav class="navigation-bar">
+        <nav class="navigation-bar-content container">
+        	<a href="../" class="element"><span class="icon-home"></span> BERANDA &trade;</a>
+            <span class="element-divider"></span>
+                
+			<a class="element1 pull-menu" href="#"></a>
+			<ul class="element-menu">
+				<li>
+					<a class="dropdown-toggle" href="#"> Tentang Ismo </a>
+					<ul class="dropdown-menu" data-role="dropdown">
+                    	<li class="menu-title">Profil Ismo</li>
+						<li><a id="profilIsmo">Data Diri</a></li>
+						<li><a id="contactIsmo">Contact</a></li>
+                        <li class="menu-title">Curiculume Vitae Ismo</li>
+						<li><a id="pendidikanIsmo">Pendidikan</a></li>
+						<li><a href="aboutUs.php?post=reservasi">Kemampuan dan Bahasa</a></li>
+						<li><a href="aboutUs.php?post=pembayaran">Pengalaman Kerja</a></li>
+					</ul>  
+				</li>
+				<li>
+					<a class="dropdown-toggle" href="#"> Tentang Handra </a>
+					<ul class="dropdown-menu" data-role="dropdown">
+                    	<li class="menu-title">Profil Handra</li>
+						<li><a href="aboutUs.php?post=profil">Data Diri</a></li>
+						<li><a href="aboutUs.php?post=profil">Contact</a></li>
+                        <li class="menu-title">Curiculume Vitae Handra</li>
+						<li><a href="aboutUs.php?post=syarat">Pendidikan</a></li>
+						<li><a href="aboutUs.php?post=reservasi">Kemampuan dan Bahasa</a></li>
+						<li><a href="aboutUs.php?post=pembayaran">Pengalaman Kerja</a></li>
+					</ul>
+				</li>
+				
+				<a class="element brand" href="contact.php">Contact</a>
+    		</ul>
+    	</nav>
+  	</nav>
+<!-- --------------------------------------------------Akhir Header-------------------------------------------------- -->
+
+	<script>
+		$(function(){
+			$("#profilIsmo").on('click', function(){
+				$.Dialog({
+					shadow: true,
+					overlay: true,
+					flat: true,
+					icon: '<span class="icon-diary"></span>',
+					padding: 10,
+					content: '',
+					onShow: function(_dialog){
+					var content =
+						'<div class="span9 grid">'+
+    					'<div class="row">'+
+     					'<div class="span3 image-container">'+
+      					'<img src="../images/author.JPG" alt=""/>'+
+       					'<div class="overlay-fluid">Simple human.. Gx usah yang ribet-ribet dech pokoknya..</div>'+
+        				'</div>'+
+         				'<div class="span6">'+
+          				'<legend>Data Diri Ismo</legend>'+
+           				'<table class="table striped hovered">'+
+            			'<tbody>'+
+             			'<tr class="ribbed-cyan"><td><strong>Nama Lengkap</strong></td><td><strong>Gatot Broto Ismoyo</strong></td></tr>'+
+              			'<tr><td>Nama Panggilan</td><td>Ismo, Ismo Broto, <em>Ismo Lhavic(Alias)</em></td></tr>'+
+               			'<tr><td>Jenis Kelamin</td><td>Laki-laki</td></tr>'+
+                		'<tr><td>Tempat Lahir</td><td>Muara Tebo</td></tr>'+
+                 		'<tr><td>Tanggal Lahir</td><td>11 November 1991</td></tr>'+
+                  		'<tr><td>Agama</td><td>Islam</td></tr>'+
+                   		'<tr><td>Kebangsaan</td><td>Indonesia</td></tr>'+
+                    	'<tr><td>Status</td><td>Belum Kawin</td></tr>'+
+                     	'<tr><td>Tinggi Badan</td><td>168 cm</td></tr>'+
+                      	'<tr><td>Berat Badan</td><td>57 Kg</td></tr>'+
+                       	'<tr><td>Hobi</td><td>Traveling, Browsing, Nonton</td></tr>'+
+                    	'</tbody>'+
+                		'</table>'+
+            			'</div>'+
+        				'</div>'+
+    					'</div>';
+
+					$.Dialog.title("Biodata Ismo");
+					$.Dialog.content(content);
+					}
+				});
+			});
+			$("#contactIsmo").on('click', function(){
+				$.Dialog({
+					shadow: true,
+					overlay: true,
+					flat: true,
+					icon: '<span class="icon-diary"></span>',
+					padding: 10,
+					content: '',
+					draggable: true,
+					onShow: function(_dialog){
+					var content =
+						'<div class="grid span8">'+
+						'<div class="row">'+
+						'<a href="http://facebook.com/gb.ismo/" target="_blank"><img src="fb_ismo.png"></a>'+
+						'<div class="span3 padding10">'+
+						'<a class="button bg-cyan fg-white" style="width: 100%; margin-bottom: 5px"  href="http://twitter.com/ismo1106"><span class="icon-twitter"></span>&nbsp;My Twitter</a>'+
+						'<a class="button bg-darkRed fg-white" style="width: 100%; margin-bottom: 5px"  href="http://plus.google.com/u/Broto.Ismo"><span class="icon-google-plus"></span>&nbsp;My Google<sup>+</sup></a>'+
+						'<a class="button warning fg-white" style="width: 100%; margin-bottom: 5px"  href="http://ismopapers.wordpress.com"><span class="icon-wordpress"></span>&nbsp;Wordpress</a>'+
+						'</div>'+
+						'<div class="span4 padding10">'+
+						'<a class="button bg-darkGreen fg-white" style="width: 100%; margin-bottom: 5px" href="mailto:ismo.lhavic@gmail.com"><span class="icon-mail"></span>&nbsp;Gmail</a>'+
+						'<a class="button bg-darkGreen fg-white" style="width: 100%; margin-bottom: 5px" href="mailto:gha_ismo@rocketmail.com"><span class="icon-mail"></span>&nbsp;Yahoo!</a>'+
+						'<a class="button bg-darkGreen fg-white" style="width: 100%; margin-bottom: 5px" href="mailto:gha_ismo@hotmail.com"><span class="icon-windows"></span>&nbsp;WindowsLive</a>'+
+						'</div>'+
+						'</div>'+
+    					'</div>';
+
+					$.Dialog.title("Contact Ismo");
+					$.Dialog.content(content);
+					}
+				});
+			});
+			$("#pendidikanIsmo").on('click', function(){
+				$.Dialog({
+					shadow: true,
+					overlay: true,
+					flat: true,
+					icon: '<span class="icon-diary"></span>',
+					padding: 10,
+					content: '',
+					onShow: function(_dialog){
+					var content =
+						'<div class="span9 grid">'+
+    					'<div class="row">'+
+          				'<legend>Pendidikan</legend>'+
+           				'<table class="table striped hovered">'+
+						'<thead class="bg-dark">'+
+						'<tr class="text-left fg-white"><th class="text-right">Range Tahun Belajar</th><th>Sekolah/Institut</th></tr>'+
+						'<thead>'+
+            			'<tbody>'+
+             			'<tr><td class="text-right">2011-sekarang</td><td>FILKOM, Teknik Informatika di Universitas Putera Indonesia "YPTK" Padang</td></tr>'+
+              			'<tr><td  class="text-right">2007-2010</td><td>Sekolah Menengah Kejuruan Negeri 2 Kota Bogor, Jawa Barat</td></tr>'+
+               			'<tr><td  class="text-right">2004-2007</td><td>Madrasah Tsanawiyah Nurul Jadid Kab. Tebo, Jambi</td></tr>'+
+                		'<tr><td  class="text-right">1998-2004</td><td>Sekolah Dasar Negeri 30 Rimbo Bujang, Kab. Tebo, Jambi</td></tr>'+
+                 		'<tr><td  class="text-right">1997-1998</td><td>Taman Kanak-kanak Al-Islam Rimbo Bujang , Kab. Muara Tebo</td></tr>'+
+                    	'</tbody>'+
+                		'</table>'+
+        				'</div>'+
+    					'</div>';
+
+					$.Dialog.title("Curiculum Vitae Ismo");
+					$.Dialog.content(content);
+					}
+				});
+			});
+		})
+	</script>
+    
+</body>
+</html>
